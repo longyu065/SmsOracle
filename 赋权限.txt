@@ -1,0 +1,3 @@
+exec dbms_java.restrict_permission( '数据库USER', 'SYS:java.net.SocketPermission', 'http://umessage.yyuap.com:80', 'listen,resolve');
+ exec dbms_java.restrict_permission( '数据库USER', 'SYS:java.net.SocketPermission', 'http://umessage.yyuap.com:80', 'accept, resolve');
+exec dbms_java.restrict_permission( '数据库USER', 'SYS:java.net.SocketPermission', 'http://umessage.yyuap.com:80', 'connect, resolve');

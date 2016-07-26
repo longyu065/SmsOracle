@@ -1,0 +1,5 @@
+create or replace directory CLASS_DIR  as 'c:\test';
+ 
+create or replace java class using bfile(class_dir,'HttpRequester.class');
+create or replace java class using bfile(class_dir,'HttpRespons.class');
+create or replace java class using bfile(class_dir,'Msg_run.class');

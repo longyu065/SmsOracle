@@ -1,0 +1,25 @@
+-- Create table
+create table A_TEXT_MSG_KEY
+(
+  kid        NUMBER,
+  url        VARCHAR2(800),
+  contentkey VARCHAR2(100),
+  mobilekey  VARCHAR2(100),
+  other      VARCHAR2(500),
+  methodtype VARCHAR2(100)
+)
+tablespace TJXTCGS
+  pctfree 10
+  initrans 1
+  maxtrans 255;
+-- Add comments to the columns 
+comment on column A_TEXT_MSG_KEY.url
+  is '短信URL';
+comment on column A_TEXT_MSG_KEY.contentkey
+  is '短信平台要求的内容Key';
+comment on column A_TEXT_MSG_KEY.mobilekey
+  is '短信平台要求的手机号Key';
+comment on column A_TEXT_MSG_KEY.other
+  is '其他短信平台要求的参数 使用 key=value,key=value 组成字符串';
+comment on column A_TEXT_MSG_KEY.methodtype
+  is 'POST/GET';
